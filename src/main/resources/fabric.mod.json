@@ -3,7 +3,7 @@
   "id": "narratorbegone",
   "version": "${version}",
   "name": "NarratorBeGone",
-  "description": "Disables the hard-coded narrator keybind",
+  "description": "Removes the hard-coded narrator keybind",
   "authors": [
     "7orivorian"
   ],
