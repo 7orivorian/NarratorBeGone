@@ -10,7 +10,7 @@
   "contact": {
     "repo": "https://github.com/7orivorian/NarratorBeGone"
   },
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "icon": "assets/narratorbegone/icon.png",
   "environment": "client",
   "entrypoints": {
