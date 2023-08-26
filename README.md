@@ -1,7 +1,7 @@
 # *Banish the narrator!*
 
 <div style="display: flex; justify-content: center;">
-  <img src="src/main/resources/assets/narratorbegone/icon.png" alt="Mod Logo" width="200">
+  <img src="src/main/resources/assets/narratorbegone/icon_transparent.png" alt="Mod Logo" width="200">
 </div>
 
 **NarratorBeGone** is a Minecraft mod that automatically disables the hard-coded narrator key binding. Enjoy
