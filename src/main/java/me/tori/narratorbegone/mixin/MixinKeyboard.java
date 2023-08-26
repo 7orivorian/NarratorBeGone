@@ -16,10 +16,10 @@
 package me.tori.narratorbegone.mixin;
 
 import net.minecraft.client.Keyboard;
+import net.minecraft.client.util.NarratorManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.Redirect;
 
 /**
  * @author <b><a href="https://github.com/7orivorian">7orivorian</a></b>
@@ -28,17 +28,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Keyboard.class)
 public class MixinKeyboard {
 
-    @Inject(
+    @Redirect(
             method = "onKey(JIIII)V",
             at = @At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/client/option/SimpleOption;setValue(Ljava/lang/Object;)V",
-                    shift = At.Shift.BEFORE,
-                    ordinal = 1
-            ),
-            cancellable = true
+                    target = "Lnet/minecraft/client/util/NarratorManager;isActive()Z"
+            )
     )
-    public void narratorbegone$disableKeybind(long window, int key, int scancode, int action, int modifiers, CallbackInfo ci) {
-        ci.cancel();
+    public boolean narratorbegone$disableKeybind(NarratorManager narratorManager) {
+        return false;
     }
 }
