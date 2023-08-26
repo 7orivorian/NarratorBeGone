@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "narratorbegone",
+  "version": "${version}",
+  "name": "NarratorBeGone",
+  "description": "Disables the hard-coded narrator keybind",
+  "authors": [
+    "7orivorian"
+  ],
+  "contact": {
+    "repo": "https://github.com/7orivorian/NarratorBeGone"
+  },
+  "license": "MIT",
+  "icon": "assets/narratorbegone/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.tori.narratorbegone.client.NarratorBeGoneClient"
+    ],
+    "main": [
+      "me.tori.narratorbegone.NarratorBeGone"
+    ]
+  },
+  "mixins": [
+    "narratorbegone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
