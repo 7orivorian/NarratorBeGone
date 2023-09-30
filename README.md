@@ -15,9 +15,8 @@ uninterrupted gameplay without accidentally toggling the narrator!
 | [Fabric 1.20.1](https://modrinth.com/mod/narratorbegone/version/1.0.0+1.20.1) | [Fabric 1.20.1](https://github.com/7orivorian/NarratorBeGone/releases/tag/v1.0.0+1.20.1) |
 | [Fabric 1.19.4](https://modrinth.com/mod/narratorbegone/version/1.0.0+1.19.4) | [Fabric 1.19.4](https://github.com/7orivorian/NarratorBeGone/releases/tag/v1.0.0+1.19.4) |
 
-**Pro Tip:**
-<small>In Minecraft 1.20.2 an option to disable the narrator keybind was added
-to the in-game Accessability Options!</small>
+<small>**Pro Tip:** In Minecraft 1.20.2 an option to disable the narrator
+keybind was added to the in-game Accessability Options!</small>
 
 ## Installation
 
