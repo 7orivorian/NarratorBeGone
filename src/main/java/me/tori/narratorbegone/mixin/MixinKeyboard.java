@@ -32,10 +32,11 @@ public class MixinKeyboard {
             method = "onKey(JIIII)V",
             at = @At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/client/util/NarratorManager;isActive()Z"
+                    target = "Lnet/minecraft/client/gui/screen/Screen;hasControlDown()Z",
+                    ordinal = 1
             )
     )
-    public boolean narratorbegone$disableKeybind(NarratorManager narratorManager) {
+    public boolean narratorbegone$disableKeybind() {
         return false;
     }
 }
